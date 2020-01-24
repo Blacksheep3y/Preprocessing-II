@@ -59,3 +59,101 @@
     }
   }
 }// home
+
+
+//MY CODE
+.header {
+  .headertext {
+      div, p {
+      margin-top: 2%;
+    }
+    div {
+      font-family: @ff;
+      .FS(3.2rem);
+    }
+    p {
+      font-family: @ff2;
+      .FS(1.6rem);
+    }
+  }
+}
+
+.btn {
+  .butt0n(rgb(8, 143, 161), 2em, 5%, whitesmoke, 0.5em, 80%);
+  margin-bottom: 8%;
+}
+
+//MEDIA QUERY @500PX - MOBILE DESIGN
+@media @mobile {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      margin-bottom: 0.5em;
+    }
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+      width: 90%;
+    }
+    .headertext {
+      margin: 0 5%;
+    }
+  }
+  // .content-section {
+  //   display: flex;
+  //   // flex-wrap: wrap;
+  //   flex-direction: column;
+  //   width: 100%;
+  //   .text-content {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     // flex-direction: column;
+  //   }
+  //   .img-content {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     // flex-direction: column;
+  //   }
+  // }
+  // .content-text {
+  //   display: block;
+  //   flex-wrap: wrap;
+  //   box-sizing: border-box;
+  // }
+.home {
+  .content-section {
+    .text-content, .img-content {
+          width: 100%;
+          padding-right: 0;
+          padding-left: 0;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 5%;
+          img {
+            width: 100%;
+          }
+          .img-fluid {
+            width: 95%;
+          }
+        }
+      }
+  .inverse-content {
+    flex-direction: column-reverse;
+    width: 94%;
+  }
+  .content-pick {
+    display: block;
+    .destination {
+      width: 70%;
+      margin: 0 20%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+    }
+}
+

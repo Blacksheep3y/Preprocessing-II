@@ -1,1 +1,27 @@
 // Mixins in here
+
+// Parametric mixin
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    }
+.space(@margin, @padding) {
+    margin: @margin;
+    padding: @padding;
+}
+.FS(@FS) {
+    font-size: @FS;
+}
+.width(@width) {
+    width: @width;
+}
+.butt0n (@BG, @FontSize, @Pad, @color, @corners, @wif){
+    background-color: @BG;
+    font-size: @FontSize;
+    padding: @Pad;
+    color: @color;
+    border-radius: @corners;
+    width: @wif;
+    text-align: center;
+}
